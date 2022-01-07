@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body style="background-color: rgb(51, 73, 94),text-color: rgb(12,76,95)" ;>
+    <center>
+        <img src="cp.jpg" alt="CPLOGO">
+    </center>
+
+    <h1>
+        <center>Student Registration Form
+    </h1>
+    <Form name="formRegistration" action="form.html">
+        <center>
+            <table border="0">
+                <tr>
+                    <td> First Name </td>
+                    <td>&nbsp;</td>
+                    <td> <input type="textbox" name="txtFirstName" placeholder="Enter First Name"></td>
+                </tr>
+
+                <tr>
+                    <td> Last Name </td>
+                    <td>&nbsp;</td>
+                    <td> <input type="textbox" placeholder="Enter Last Name" name="txtLastName"></td>
+                </tr>
+                <tr>
+                    <td> Upload Profile </td>
+                    <td>&nbsp;</td>
+                    <td><input type="file" name="files" title="Upload Profile" placeholder="Uploadprofile" />
+
+                </tr>
+                <tr>
+                    <td> Qualification</td>
+
+                    <center>
+                        <td>&nbsp;</td>
+                        <td><select id="Qualification">
+                        <option value="BE Computer Science">BE Computer Science</option>
+                        <option value="B.Tech Computer">B.Tech Computer</option>
+                        <option value="B.Tech IT">B.Tech IT</option>
+                        <option value="MSC IT">MSC IT</option>
+                        </select>
+                        </td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>&nbsp;</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="radio" name="Gender" value="male">Male
+                        <input type="radio" name="Gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="checkbox" name="chkplaying" value="Ring">Reading
+                        <input type="checkbox" name="chkreading" value="Ping">Playing
+                        <input type="checkbox" name="chkwriting" value="Wing">Writing
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <textarea name="txtAddress" rows="5" cols="60" placeholder="Enter Address."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Area of Interest</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="checkbox" name="chkplaying" value="chkdesigning">Designning
+                        <input type="checkbox" name="chkplaying" value="chkcoding">Coding
+                        <input type="checkbox" name="chkplaying" value="chktesting">Testing
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email here.">
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <Select Name="cmbCity">
+				<option>Surat</option>
+				<option>Bardoli</option>
+				<option>Ahmedabad</option>
+				<option>Navsari</option>
+				</select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" name="cmdSubmit" value="Submit">
+                        <input type="reset" name="cmdReset" value="Reset">
+                    </td>
+                </tr>
+                </center>
+    </form>
+</body>
+
+</html>
