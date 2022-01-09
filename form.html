@@ -1,117 +1,73 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Student Registration Form</title>
+    <script src="js.js"></script>
 </head>
 
-<body style="background-color: rgb(51, 73, 94),text-color: rgb(12,76,95)" ;>
+<body style="background-color:darkcyan;font-family:tahoma;color:chartreuse">
+
     <center>
-        <img src="cp.jpg" alt="CPLOGO">
-    </center>
 
-    <h1>
-        <center>Student Registration Form
-    </h1>
-    <Form name="formRegistration" action="form.html">
-        <center>
-            <table border="0">
-                <tr>
-                    <td> First Name </td>
-                    <td>&nbsp;</td>
-                    <td> <input type="textbox" name="txtFirstName" placeholder="Enter First Name"></td>
-                </tr>
+        <img src="cp.jpg">
+        <h1 style="text-align: center;">REGISTRATION FORM</h1>
 
-                <tr>
-                    <td> Last Name </td>
-                    <td>&nbsp;</td>
-                    <td> <input type="textbox" placeholder="Enter Last Name" name="txtLastName"></td>
-                </tr>
-                <tr>
-                    <td> Upload Profile </td>
-                    <td>&nbsp;</td>
-                    <td><input type="file" name="files" title="Upload Profile" placeholder="Uploadprofile" />
+        <form name="RegForm" style="text-align:center" onsubmit="return VALIDATION()">
 
-                </tr>
-                <tr>
-                    <td> Qualification</td>
 
-                    <center>
-                        <td>&nbsp;</td>
-                        <td><select id="Qualification">
-                        <option value="BE Computer Science">BE Computer Science</option>
-                        <option value="B.Tech Computer">B.Tech Computer</option>
-                        <option value="B.Tech IT">B.Tech IT</option>
-                        <option value="MSC IT">MSC IT</option>
-                        </select>
-                        </td>
-                </tr>
+            <input type="text" name="FirstName" placeholder="FirstName" />
 
-                <tr>
-                    <td>Date of Birth</td>
-                    <td>&nbsp;</td>
-                    <td><input type="date"></td>
-                </tr>
-                <tr>
-                    <td>Gender</td>
-                    <td>&nbsp;</td>
-                    <td>
-                        <input type="radio" name="Gender" value="male">Male
-                        <input type="radio" name="Gender" value="female">Female
-                    </td>
-                </tr>
-                <tr>
-                    <td>Hobby</td>
-                    <td>&nbsp;</td>
-                    <td>
-                        <input type="checkbox" name="chkplaying" value="Ring">Reading
-                        <input type="checkbox" name="chkreading" value="Ping">Playing
-                        <input type="checkbox" name="chkwriting" value="Wing">Writing
-                    </td>
-                </tr>
-                <tr>
-                    <td>Address</td>
-                    <td>&nbsp;</td>
-                    <td>
-                        <textarea name="txtAddress" rows="5" cols="60" placeholder="Enter Address."></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Area of Interest</td>
-                    <td>&nbsp;</td>
-                    <td>
-                        <input type="checkbox" name="chkplaying" value="chkdesigning">Designning
-                        <input type="checkbox" name="chkplaying" value="chkcoding">Coding
-                        <input type="checkbox" name="chkplaying" value="chktesting">Testing
-                    </td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td>&nbsp;</td>
-                    <td>
-                        <input type="email" id="email" name="email" placeholder="Enter your Email here.">
-                    </td>
-                </tr>
-                <tr>
-                    <td>City</td>
-                    <td>&nbsp;</td>
-                    <td>
-                        <Select Name="cmbCity">
-				<option>Surat</option>
-				<option>Bardoli</option>
-				<option>Ahmedabad</option>
-				<option>Navsari</option>
-				</select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td><input type="submit" name="cmdSubmit" value="Submit">
-                        <input type="reset" name="cmdReset" value="Reset">
-                    </td>
-                </tr>
-                </center>
-    </form>
+            <br>
+            <input type="text" name="LastName" placeholder="LastName" />
+
+            <br><br> Qualification<br><br>
+
+            <select type="text" value="" name="Subject" required>
+            <option>Select Course</option>
+            <option>B.TECH Computer</option>
+            <option>B.E.Computer Science</option>
+            <option>MSC I.T</option>
+            <option>MCA</option>
+            </select>
+            <br/>
+            <br>
+
+            <p>Gender <br> Male
+                <input type="radio" name="Male"> Female <input type="radio" name="Female">
+                <br>
+                <br>
+                <textarea name="txtAddress" rows="2" cols="60" placeholder="Enter Address."></textarea>
+                <br /><br>
+                <input type="email" name="EMail" placeholder="Email Address" />
+                <br><br>
+
+                <input type="text" name="Mobilenumber" placeholder="Mobile number" />
+                <br><br>
+
+                <label for="HTML">Date of Birth</label><br>
+                <input type="date" name="dob" />
+                <br /><br>
+
+
+                <input type="checkbox" name="Designing">Designing
+                <input type="checkbox" name="Coding">Coding
+                <input type="checkbox" name="Testing">Testing
+                <br><br>
+
+
+                <input type="file" name="files" title="Upload Profile" placeholder="Uploadprofile" />
+                <input id="myButton" type="submit" value="Submit" name="Submit " />
+                <input type="reset" value="Reset" name="Reset" />
+
+
+        </form>
+
+
 </body>
 
 </html>
