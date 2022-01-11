@@ -33,6 +33,10 @@
                 Subject.focus();
                 return false;
             }
+            var loadFile = function(event) {
+                var image = document.getElementById('output');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            };
 
             return true, alert("You Have Sucessfully Registered!");
         }

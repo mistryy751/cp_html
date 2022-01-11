@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Student Registration Form</title>
     <script src="js.js"></script>
+
 </head>
 
 <body style="background-color:darkcyan;font-family:tahoma;color:chartreuse">
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
 
     <center>
 
@@ -58,11 +65,16 @@
                 <input type="checkbox" name="Coding">Coding
                 <input type="checkbox" name="Testing">Testing
                 <br><br>
-
-
-                <input type="file" name="files" title="Upload Profile" placeholder="Uploadprofile" />
+                <label for="file" style="cursor:pointer;">Upload Image</label>
+                <img src="noimage.png" id=output width="200" height="200" style="border-radius:100px">
+                <br>
+                <!--<input type="file" name="files" title="Upload Profile" style="cursor:pointer;" placeholder="Uploadprofile" />-->
                 <input id="myButton" type="submit" value="Submit" name="Submit " />
                 <input type="reset" value="Reset" name="Reset" />
+                <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display:none;">
+
+                <br>
+
 
 
         </form>
